@@ -1,0 +1,15 @@
+.quan, .serv, .prc{
+  width:40%;
+  padding:2.5px;
+}
+span{
+  font-size:14px;
+}
+.app{
+  border:1px solid black;
+  margin:5% 10% 0% 10%;
+  padding:5%;
+}
+option{
+  margin:10px;
+}
