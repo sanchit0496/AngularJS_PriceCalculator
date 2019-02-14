@@ -1,0 +1,36 @@
+<div class="app" ng-app="myApp" ng-controller="myCtrl">
+  
+  
+<div class = "option">
+  
+<form>
+  <p>Quantity</p>
+<select class="quan" ng-model="quantity" value = "{{quantity}}">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+</form>
+  
+<form>
+<p>Service Type</p>
+<select class="serv" ng-model="service" value = "{{service}}">
+  <option value="Basic (Rs.5000)">Basic (Rs.5000)</option>
+  <option value="Intermediate (Rs.10,000)">Intermediate (Rs.10,000)</option>
+  <option value="Advanced (Rs.15,000)">Advanced (Rs.15,000)</option>
+  <option value="Pro (Rs.20,000)">Pro (Rs.20,000)</option>
+</select>
+</form>
+  
+  <p>Price</p>
+  <input type="text" class="prc" ng-model="price" value="{{price}}">
+</div>
+  
+  <p>You Entered:</p>
+  <span>Quantity: {{quantity}}</span><br>
+  <span>Service Type: {{service}}</span><br>
+  <span>Price: {{price}}</span>
+
+</div>
+
