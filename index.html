@@ -1,11 +1,16 @@
 <link rel="stylesheet" href="styles.css">
 <script src="app.js"></script>
 
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
 <div class="app" ng-app="myApp" ng-controller="myCtrl">
-  
-  
-<div class = "option">
-  
+  <center><h1>Basic Price Calculator App - Angular JS</h1></center><br>
+  <div class="container">
+  <div class="row">
+    <div class="col">
+      
+      <div class = "option">
+  <h5>Enter Preferences</h5><br>
 <form>
   <p>Quantity</p>
 <select class="quan" ng-model="quantity" value = "{{quantity}}">
@@ -13,9 +18,10 @@
   <option value="2">2</option>
   <option value="3">3</option>
   <option value="4">4</option>
+  <option value="5">5</option>
 </select>
 </form>
-  
+  <br>
 <form>
 <p>Service Type</p>
 <select class="serv" ng-model="service" value = "{{service}}">
@@ -25,15 +31,38 @@
   <option value="Pro (Rs.20,000)">Pro (Rs.20,000)</option>
 </select>
 </form>
-  
+  <br>
+  <form>
   <p>Price</p>
-  <input type="text" class="prc" ng-model="price" value="{{price}}">
+<select class="quan" ng-model="price" value = "{{price}}">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+</select>
+</form>
 </div>
-  
-  <p>You Entered:</p>
+    </div>
+    
+    
+    <div class="col entered">
+  <h5>You Entered</h5><br>
   <span>Quantity: {{quantity}}</span><br>
   <span>Service Type: {{service}}</span><br>
   <span>Price: {{price}}</span>
+    </div>
+    
+  </div>
+    
+  </div>
+  
+
+  
+  <div class="total">
+         <h5>You Have To Pay: ${{(( price +  option ) * quantity)}}</h5>
+    </div>
 
 </div>
+
 
